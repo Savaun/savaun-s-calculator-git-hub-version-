@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///Users/student/Desktop/Savaun%20Calculator%20and%20Alarm/calculator.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Savaun's Calculator</title>
+		</head><body><h1 id="CalculatorName">Savaun's Calculator</h1>
+	<style type="text/css">
+	#footer{
+		color: 
+		left:0px;
+		bottom:0px;
+		height:30px;
+		width:100%;
+		margin: 0px;
+		padding-right: 10px;
+		position:fixed;
+		text-align:center;
+		border:groove;
+		border-color: #42f44b;
+		background: -webkit-linear-gradient(-90deg, yellow, goldenrod, white);
+		text-decoration-style: dotted;
+	}
+	#tborder{
+		border-style: groove;
+		border-color: #42f44b;
+		background: -webkit-linear-gradient(goldenrod,white,lightgrey,white,gold);
+		padding: 4px 4px 4px 4px;
+	}
+	#inputbar{
+		font-size: 2em;
+		text-align: center;
+		position: center;
+		text-shadow: 1px 1px;
+		padding-left: 1px 1px 1px 1px;
+		border-style: groove;
+		border-color: #42f44b;	
+		border-width: 8px;	
+		border-radius: 2px;
+		background: -webkit-linear-gradient(lightgrey,white,lightgrey);
+	}
+	.calcbuttons{
+		
+		box-shadow: 1px 1px 1px 1px;
+		border-spacing:
+		border: groove;
+		border-radius: 2px;
+		border-width: 4px;	
+		border-color: #42f44b;
+		background-color: #ffffff;
+		background-blend-mode: color-dodge;
+		background: -webkit-linear-gradient(180deg,white,lightgrey,white,lightgrey,white);
+		background: -webkit-linear-gradient(gold,goldenrod,black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+		color: rgba(0,0,0,0.9);
+		padding: 10px 20px;
+		font-size: 2em;
+		cursor: pointer;
+		width: 80px;
+		height: 80px;
+		color: goldenrod;
+		text-shadow: 0 0 3px #ffab00;	
+
+
+	}
+	#zerobutton{
+		text-align: center;
+		box-shadow: 1px 1px 1px 1px;
+		border-spacing:
+		border: groove;
+		border-radius: 2px;
+		border-width: 4px;	
+		border-color: #42f44b;
+		background-color: #ffffff;
+		background-blend-mode: color-dodge;
+		background: -webkit-linear-gradient(180deg,white,lightgrey,white,lightgrey,white);
+		background: -webkit-linear-gradient(gold,goldenrod,black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+		color: rgba(0,0,0,0.9);
+		padding: 10px 20px;
+		font-size: 2em;
+		cursor: pointer;
+		width: 248px;
+		height: 80px;
+		color: goldenrod;
+		text-shadow: 0 0 3px #ffab00;
+	}
+	#calculationbuttons{
+		width: 30px;
+		height: 70px;
+		font-size: 1em;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		letter-spacing: -8px;
+	}
+
+	#averagebutton{
+		width: 332px;
+		height: 80px;
+	}
+	#wholecalculator{
+		border-width: 20px;
+		border-style: groove;
+		border-radius: 80px;
+		padding-left: 400px;
+		border-color: #42f44b;
+		border-collapse: 100px;
+		text-shadow: 1px 1px 1px;
+		box-shadow: 1px 1px 1px;
+		background-blend-mode: color-burn;
+		background: -webkit-radial-gradient(white,cornsilk,lightyellow,gold,lightyellow,gold,cornsilk,white);
+
+	}
+	h1{
+		text-align: center;
+		text-shadow: 1px 1px 1px;
+		border-style: groove;
+		border-color: #42f44b;
+		background: -webkit-linear-gradient(-90deg, yellow, goldenrod, white);
+		text-decoration-style: dotted;
+	}
+	#calcbuttons{
+
+	}
+	body{
+			background: fixed;
+			background-color:#ffab00;
+			background: -webkit-linear-gradient(-180deg,orange,yellow,goldenrod,yellow,orange)
+	}
+	
+	</style>
+
+
+	<script type="text/javascript">
+		function doStuff()
+		{
+			var cat = document.getElementById("inputbar");
+			var rat = cat.value.split("+");
+			var bat = rat.length;
+			var hat = eval(cat.value);
+			var roach = hat / bat;
+
+		document.getElementById("inputbar").value = roach;
+}
+   
+    </script>   
+
+
+
+<div id="wholecalculator">
+
+	<form name="Calculator">
+		<table border="" id="tborder">
+	<tbody><tr>
+	<td>
+			<input id="inputbar" type="text" placeholder="0" name="Input" size="20" readonly="">
+		
+	<br>
+		<input class="calcbuttons" type="button" name="one" value=" 1 " onclick="Calculator.Input.value +=&#39;1&#39;">
+		<input class="calcbuttons" type="button" name="two" value=" 2 " onclick="Calculator.Input.value +=&#39;2&#39;">
+		<input class="calcbuttons" type="button" name="three" value=" 3 " onclick="Calculator.Input.value +=&#39;3&#39;">
+		<input class="calcbuttons" type="button" name="four" value=" 4 " onclick="Calculator.Input.value +=&#39;4&#39;">
+	<br>
+		<input class="calcbuttons" type="button" name="five" value=" 5 " onclick="Calculator.Input.value +=&#39;5&#39;">
+		<input class="calcbuttons" type="button" name="six" value=" 6 " onclick="Calculator.Input.value +=&#39;6&#39;">
+		<input class="calcbuttons" type="button" name="seven" value=" 7 " onclick="Calculator.Input.value +=&#39;7&#39;">
+		<input class="calcbuttons" type="button" name="eight" value=" 8 " onclick="Calculator.Input.value +=&#39;8&#39;">
+	<br>
+		<input class="calcbuttons" type="button" name="four" value=" 9 " onclick="Calculator.Input.value +=&#39;9&#39;">
+		<input id="zerobutton" class="calcbuttons" type="button" name="four" value=" 0 " onclick="Calculator.Input.value +=&#39;0&#39;">
+		<br>
+
+		
+		<input id="averagebutton" class="calcbuttons" type="button" name="average" value=" AVG " onclick="doStuff()">
+		</td>
+
+
+		<td colspan="3">
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="add" value=" + " onclick="Calculator.Input.value +=&#39;+&#39;">
+	<br>
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="subtract" value=" - " onclick="Calculator.Input.value +=&#39;-&#39;">
+	<br>
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="multiply" value=" X " onclick="Calculator.Input.value +=&#39;*&#39;">
+	<br>
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="divide" value=" / " onclick="Calculator.Input.value +=&#39;/&#39;">
+	<hr id="hr1">
+	
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="equal" value=" = " onclick="Calculator.Input.value=eval(Calculator.Input.value)">
+	<br>
+		<input id="calculationbuttons" class="calcbuttons" type="button" name="clear" value=" CE " onclick="Calculator.Input.value=&#39;&#39;">
+		
+		</td></tr></tbody></table>
+	</form>
+</div>
+
+<footer id="footer">©Savaun's Calculator</footer>
+</body></html>
